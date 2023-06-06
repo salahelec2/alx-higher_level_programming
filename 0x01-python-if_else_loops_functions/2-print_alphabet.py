@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print(''.join(chr(letter) for letter in range(97, 123)))
+print('{0}'.format(''.join(chr(i) for i in range(65, 91))))
