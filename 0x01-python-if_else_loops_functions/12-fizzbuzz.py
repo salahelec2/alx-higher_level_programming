@@ -11,7 +11,6 @@ def fizzbuzz():
                 if i % 5 == 0
                 else str(i) + " "
                 for i in range(1, 101)
-            ),
-            end=""
+            )
         )
     )
