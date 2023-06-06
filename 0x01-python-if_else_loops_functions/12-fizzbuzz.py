@@ -12,6 +12,6 @@ def fizzbuzz():
                 else str(i) + " "
                 for i in range(1, 101)
             ),
-            end=" ",
+            end="",
         )
     )
