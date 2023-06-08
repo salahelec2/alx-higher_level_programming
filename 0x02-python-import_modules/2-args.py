@@ -6,7 +6,7 @@ if __name__ == "__main__":
     print(
         "{} {}{}".format(
             num_args,
-            "argument :" if num_args == 1 else "arguments",
+            "argument" if num_args == 1 else "arguments",
             "." if num_args == 0 else ":",
         )
     )
