@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-if __name__ == "__main__" :
-
+if __name__ == "__main__":
     from calculator_1 import add, sub, div, mul
     from sys import argv
 
@@ -8,10 +7,10 @@ if __name__ == "__main__" :
     if arg_num < 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>\n")
         exit(1)
-        
+
     a = int(argv[1])
     b = int(argv[3])
-    
+
     if argv[2] == "+":
         print("{}".format(add(a, b)))
     elif argv[2] == "*":
