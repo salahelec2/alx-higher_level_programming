@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    for elem in matrix:
-        print("{}".format(" ".join("{}".format(element) for element in elem)))
+    if (len(matrix) - 1 == 0):
+        return ""
+    else:
+        for elem in matrix:
+            print("{:d} {:d} {:d}".format(elem[0], elem[1], elem[2]))
