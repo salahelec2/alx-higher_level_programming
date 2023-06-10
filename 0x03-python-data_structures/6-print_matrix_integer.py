@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if (len(matrix) - 1 == 0):
+    if len(matrix) == 0:
         print("")
-        return 
+        return
     else:
         for elem in matrix:
-            print("{:d} {:d} {:d}".format(elem[0], elem[1], elem[2]))
+            lenth = len(elem) - 1
+            for numb, element in enumerate(elem):
+                print("{:d}".format(element), end=" " if numb < lenth else "")
+            print("")
