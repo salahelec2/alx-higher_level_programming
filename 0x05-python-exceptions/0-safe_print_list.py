@@ -7,7 +7,7 @@ def safe_print_list(my_list=[], x=0):
         try:
             print("{}".format(my_list[i]), end="")
             number += 1
-        except IndexError:
+        except:
             continue
     print()
     return number
