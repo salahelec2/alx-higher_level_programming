@@ -4,8 +4,8 @@
 
 class Square:
     """the square class body"""
-
-	def __init__(self, size=0):
+    
+    def __init__(self, size=0):
         """new Square init .
         Args:
             size (int): The size of the new square.
