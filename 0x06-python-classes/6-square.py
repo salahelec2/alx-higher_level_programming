@@ -7,16 +7,18 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """new Square init .
+
         Args:
             size (int): The size of the new square.
+            position (int, int): position.
         """
-        self.__size = size
-        self.__position = position
-
+        self.size = size
+        self.position = position
+ 
     @property
     def size(self):
         """size of the square."""
-        return self.__size
+        return (self.__size)
 
     @size.setter
     def size(self, value):
@@ -28,9 +30,9 @@ class Square:
 
     @property
     def position(self):
-        """Get/set the current position of the square."""
+        """position of the square."""
         return (self.__position)
-    
+
     @position.setter
     def position(self, value):
         if (not isinstance(value, tuple) or
@@ -42,15 +44,13 @@ class Square:
 
     def area(self):
         """area of the square."""
-        return self.__size**2
+        return (self.__size ** 2)
 
     def my_print(self):
-        """Prints the square."""
-        for i in range(0, self.__size):
-            [print("#", end="") for j in range(self.__size)]
-            print("")
+        """Print the square uing # character."""
         if self.__size == 0:
             print("")
+            return
 
         [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
