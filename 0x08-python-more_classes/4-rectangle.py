@@ -30,6 +30,17 @@ class Rectangle:
         else:
             return 2 * self.height + 2 * self.width
 
+    def __str__(self):
+        if (self.height != 0 and self.width != 0):
+            a = self.width * "#" + "\n"
+            b = self.width * "#"
+            return ((self.height - 1) * a + b)
+        else:
+            return ("")
+
+    def __repr__(self):
+            return "Rectangle({}, {})".format(self.width, self.height)
+
     @property
     def height(self):
         return self.__height
